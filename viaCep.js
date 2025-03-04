@@ -1,5 +1,6 @@
 const readline = require('readline')
 
+//função assíncrona que chama a API
 async function BuscarCep(cep) {
   if (!/^[0-9]{8}$/.test(cep)) {
     console.error('CEP inválido deve conter 8 dígitos númericos.')
